@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Merchant & Blade"
+config/version="0.3.0"
+run/main_scene="res://scenes/world.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+ConfigManager="*res://scripts/autoload/config_manager.gd"
+GameManager="*res://scripts/autoload/game_manager.gd"
+EconomyManager="*res://scripts/autoload/economy_manager.gd"
+SaveLoad="*res://scripts/autoload/save_load.gd"
+EventSystem="*res://scripts/autoload/event_system.gd"
+RumorSystem="*res://scripts/autoload/rumor_system.gd"
+ScoutSystem="*res://scripts/autoload/scout_system.gd"
+QuestSystem="*res://scripts/autoload/quest_system.gd"
+WorkshopSystem="*res://scripts/autoload/workshop_system.gd"
+ReputationSystem="*res://scripts/autoload/reputation_system.gd"
+TitleSystem="*res://scripts/autoload/title_system.gd"
+GuardSystem="*res://scripts/autoload/guard_system.gd"
+DiceGame="*res://scripts/autoload/dice_game.gd"
+Competitor="*res://scripts/autoload/competitor.gd"
+LoanManager="*res://scripts/autoload/loan_manager.gd"
+WarehouseSystem="*res://scripts/autoload/warehouse_system.gd"
+BlackMarket="*res://scripts/autoload/black_market.gd"
+EquipmentSystem="*res://scripts/autoload/equipment_system.gd"
+MercenaryGuild="*res://scripts/autoload/mercenary_guild.gd"
+ExperienceSystem="*res://scripts/autoload/experience_system.gd"

@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "name": "Зерно",
+    "category": "food",
+    "basePrice": [12, 18, 15],
+    "spoilDays": 14
+  },
+  {
+    "id": 2,
+    "name": "Шерсть",
+    "category": "raw_material",
+    "basePrice": [35, 28, 40],
+    "spoilDays": null
+  },
+  {
+    "id": 3,
+    "name": "Железо",
+    "category": "raw_material",
+    "basePrice": [50, 55, 45],
+    "spoilDays": null
+  },
+  {
+    "id": 4,
+    "name": "Дерево",
+    "category": "building",
+    "basePrice": [20, 22, 18],
+    "spoilDays": null
+  },
+  {
+    "id": 5,
+    "name": "Вино",
+    "category": "luxury",
+    "basePrice": [100, 110, 95],
+    "spoilDays": null
+  },
+  {
+    "id": 6,
+    "name": "Рыба",
+    "category": "food",
+    "basePrice": [14, 20, 16],
+    "spoilDays": 12
+  },
+  {
+    "id": 7,
+    "name": "Мясо",
+    "category": "food",
+    "basePrice": [18, 25, 20],
+    "spoilDays": 8
+  },
+  {
+    "id": 8,
+    "name": "Сыр",
+    "category": "food",
+    "basePrice": [16, 22, 18],
+    "spoilDays": 20
+  },
+  {
+    "id": 9,
+    "name": "Фрукты",
+    "category": "food",
+    "basePrice": [10, 15, 12],
+    "spoilDays": 7
+  },
+  {
+    "id": 10,
+    "name": "Хлеб",
+    "category": "food",
+    "basePrice": [8, 12, 10],
+    "spoilDays": 5
+  },
+  {
+    "id": 11,
+    "name": "Лён",
+    "category": "raw_material",
+    "basePrice": [28, 32, 25],
+    "spoilDays": null
+  },
+  {
+    "id": 12,
+    "name": "Кожа",
+    "category": "raw_material",
+    "basePrice": [40, 45, 38],
+    "spoilDays": null
+  },
+  {
+    "id": 13,
+    "name": "Костная мука",
+    "category": "raw_material",
+    "basePrice": [15, 18, 14],
+    "spoilDays": null
+  },
+  {
+    "id": 14,
+    "name": "Ткань",
+    "category": "crafts",
+    "basePrice": [60, 50, 65],
+    "spoilDays": null
+  },
+  {
+    "id": 15,
+    "name": "Мебель",
+    "category": "crafts",
+    "basePrice": [80, 70, 90],
+    "spoilDays": null
+  },
+  {
+    "id": 16,
+    "name": "Шелк",
+    "category": "luxury",
+    "basePrice": [150, 160, 140],
+    "spoilDays": null
+  },
+  {
+    "id": 17,
+    "name": "Пряности",
+    "category": "luxury",
+    "basePrice": [120, 130, 115],
+    "spoilDays": null
+  },
+  {
+    "id": 18,
+    "name": "Камень",
+    "category": "building",
+    "basePrice": [25, 28, 22],
+    "spoilDays": null
+  },
+  {
+    "id": 19,
+    "name": "Кирпич",
+    "category": "building",
+    "basePrice": [22, 25, 20],
+    "spoilDays": null
+  },
+  {
+    "id": 20,
+    "name": "Металлические слитки",
+    "category": "crafts",
+    "basePrice": [90, 95, 85],
+    "spoilDays": null
+  },
+  {
+    "id": 21,
+    "name": "Соль",
+    "category": "food",
+    "basePrice": [8, 12, 10],
+    "spoilDays": null,
+    "description": "Замедляет порчу других товаров"
+  },
+  {
+    "id": 22,
+    "name": "Лёд",
+    "category": "food",
+    "basePrice": [5, 8, 6],
+    "spoilDays": 3,
+    "description": "Замедляет порчу во время хранения"
+  },
+  {
+    "id": 23,
+    "name": "Лекарственные травы",
+    "category": "luxury",
+    "basePrice": [70, 80, 65],
+    "spoilDays": null
+  },
+  {
+    "id": 24,
+    "name": "Драгоценные камни",
+    "category": "luxury",
+    "basePrice": [200, 220, 180],
+    "spoilDays": null
+  },
+  {
+    "id": 25,
+    "name": "Масло",
+    "category": "food",
+    "basePrice": [24, 30, 22],
+    "spoilDays": 18
+  }
+]

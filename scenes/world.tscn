@@ -1,0 +1,207 @@
+[gd_scene load_steps=11 format=3 uid="uid://b5mj08v1s4y0w"]
+
+[ext_resource type="Script" path="res://scripts/ui/main_ui.gd" id="1_2dkhg"]
+[ext_resource type="Script" path="res://scripts/ui/trade_panel.gd" id="2_7n8le"]
+[ext_resource type="Script" path="res://scripts/ui/inventory_panel.gd" id="3_5fqrs"]
+[ext_resource type="Script" path="res://scripts/ui/map_panel.gd" id="4_8gq9n"]
+[ext_resource type="Script" path="res://scripts/ui/team_panel.gd" id="5_1kxyz"]
+[ext_resource type="Script" path="res://scripts/ui/reputation_panel.gd" id="6_repstat"]
+[ext_resource type="Script" path="res://scripts/ui/quest_panel.gd" id="7_questpanel"]
+[ext_resource type="Script" path="res://scripts/ui/tavern_panel.gd" id="8_tavernpanel"]
+
+[sub_resource type="Theme" id="Theme_abc123"]
+
+[node name="World" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource("Theme_abc123")
+script = ExtResource("1_2dkhg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+layout_mode = 1
+custom_minimum_size = Vector2(1280, 720)
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Merchant & Blade: Roads of Fortune"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Сохранить"
+
+[node name="LoadButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Загрузить"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "Выход"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TradePanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+script = ExtResource("2_7n8le")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/TradePanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="CityLabel" type="Label" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Город: Город А"
+
+[node name="MoneyLabel" type="Label" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Кошелёк: 0 з. 50 с. 0 м."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="BuyLabel" type="Label" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Кол-во:"
+
+[node name="BuyQuantity" type="LineEdit" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(60, 30)
+layout_mode = 2
+text = "1"
+
+[node name="SellLabel" type="Label" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Продать кол-во:"
+
+[node name="SellQuantity" type="LineEdit" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(60, 30)
+layout_mode = 2
+text = "1"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+custom_minimum_size = Vector2(0, 300)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/TradePanel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MapPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+script = ExtResource("4_8gq9n")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/MapPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="MessageLabel" type="Label" parent="VBoxContainer/TabContainer/MapPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Вы находитесь в: Город А"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/MapPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="InventoryPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+script = ExtResource("3_5fqrs")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/InventoryPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer/TabContainer/InventoryPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Инвентарь"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/InventoryPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+custom_minimum_size = Vector2(0, 300)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/InventoryPanel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TeamPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+script = ExtResource("5_1kxyz")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/TeamPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="TeamLabel" type="Label" parent="VBoxContainer/TabContainer/TeamPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+text = "Отряд"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/TeamPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ReputationPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+layout_mode = 2
+script = ExtResource("6_repstat")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ReputationPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/ReputationPanel/VBoxContainer"]
+layout_mode = 2
+text = "Репутация"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestsPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+layout_mode = 2
+script = ExtResource("7_questpanel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/QuestsPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/QuestsPanel/VBoxContainer"]
+layout_mode = 2
+text = "Квесты и контракты"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TavernPanel" type="PanelContainer" parent="VBoxContainer/TabContainer"]
+layout_mode = 2
+script = ExtResource("8_tavernpanel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/TavernPanel"]
+layout_mode = 1
+anchors_rect = Rect2(8, 8, -8, -8)
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/TavernPanel/VBoxContainer"]
+layout_mode = 2
+text = "Таверна (карточная игра \"кости\")"
+horizontal_alignment = 1
+vertical_alignment = 1

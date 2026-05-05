@@ -1,0 +1,100 @@
+[gd_scene load_steps=2 format=3 uid="uid://d8g5m5x3k0xpm"]
+
+[ext_resource type="Script" path="res://scripts/ui/battle_panel.gd" id="1_abc123"]
+
+[node name="Battle" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_abc123")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+text = "⚔️ БОЙ"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+size_flags_vertical = Control.SIZE_EXPAND_FILL
+
+[node name="LeftPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/LeftPanel"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="PlayerLabel" type="Label" parent="VBoxContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+text = "Ваш отряд:"
+
+[node name="PlayerUnitsContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+
+[node name="CenterPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = Control.SIZE_EXPAND_FILL
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/CenterPanel"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="GridLabel" type="Label" parent="VBoxContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+text = "Боевая сетка 5x5:"
+
+[node name="GridPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer/CenterPanel/VBoxContainer/GridPanel"]
+columns = 5
+
+[node name="RightPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/RightPanel"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="EnemyLabel" type="Label" parent="VBoxContainer/HBoxContainer/RightPanel/VBoxContainer"]
+text = "Враги:"
+
+[node name="EnemyUnitsContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/RightPanel/VBoxContainer"]
+
+[node name="BottomPanel" type="PanelContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/BottomPanel"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer/BottomPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+text = "Статус: ожидание..."
+
+[node name="ActionPanel" type="PanelContainer" parent="VBoxContainer/BottomPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ActionContainer" type="HBoxContainer" parent="VBoxContainer/BottomPanel/VBoxContainer/ActionPanel"]
+
+[node name="LogPanel" type="PanelContainer" parent="VBoxContainer/BottomPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = Control.SIZE_EXPAND_FILL
+
+[node name="LogContainer" type="VBoxContainer" parent="VBoxContainer/BottomPanel/VBoxContainer/LogPanel"]

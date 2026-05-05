@@ -1,0 +1,57 @@
+{
+  "weapons": [
+    {
+      "id": 1,
+      "name": "Палка",
+      "type": "melee",
+      "damage": 5,
+      "range": 1,
+      "price": 50,
+      "description": "Простая деревянная палка"
+    },
+    {
+      "id": 2,
+      "name": "Меч",
+      "type": "melee",
+      "damage": 15,
+      "range": 1,
+      "price": 300,
+      "description": "Стальной меч хорошего качества"
+    },
+    {
+      "id": 3,
+      "name": "Арбалет",
+      "type": "ranged",
+      "damage": 12,
+      "range": 3,
+      "price": 400,
+      "description": "Боевой арбалет с дальней дистанцией"
+    }
+  ],
+  "armor": [
+    {
+      "id": 1,
+      "name": "Одежда",
+      "type": "light",
+      "defense": 0,
+      "price": 0,
+      "description": "Обычная одежда путешественника"
+    },
+    {
+      "id": 2,
+      "name": "Кожаная броня",
+      "type": "light",
+      "defense": 5,
+      "price": 150,
+      "description": "Лёгкая кожаная броня"
+    },
+    {
+      "id": 3,
+      "name": "Кольчуга",
+      "type": "heavy",
+      "defense": 10,
+      "price": 500,
+      "description": "Прочная кольчужная броня"
+    }
+  ]
+}

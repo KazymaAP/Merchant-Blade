@@ -1,0 +1,101 @@
+{
+  "game": {
+    "starting_capital_copper": 5000,
+    "starting_reputation": 50,
+    "max_day": 365,
+    "current_version": "0.2.0"
+  },
+  "economy": {
+    "tax_rate": 0.05,
+    "tax_applies_to_sell": true,
+    "currency_conversion": {
+      "copper_per_silver": 100,
+      "silver_per_gold": 100,
+      "copper_per_gold": 10000
+    },
+    "price_variance": 0.15,
+    "competitor_undercut_percent": 0.08,
+    "event_price_modifier": 0.25
+  },
+  "spoilage": {
+    "enabled": true,
+    "check_on_travel": true,
+    "check_on_day_change": true,
+    "spoiled_item_recovery_percent": 0.1,
+    "max_inventory_slots": 50,
+    "warn_days_before_spoil": 3
+  },
+  "battle": {
+    "enabled": true,
+    "encounter_chance_percent": 30,
+    "base_loot_copper": 100,
+    "base_loot_copper_range": 50,
+    "reputation_loss_on_defeat": 10,
+    "reputation_gain_on_victory": 5
+  },
+  "travel": {
+    "days_between_cities": 1,
+    "guard_cost_percent": 0.02,
+    "guard_effectiveness_percent": 0.40,
+    "caravan_capacity_tons": 10
+  },
+  "reputation": {
+    "title_merchant_threshold": 100,
+    "title_trader_threshold": 250,
+    "title_merchant_king_threshold": 500,
+    "sell_transaction_reputation": 1,
+    "buy_transaction_reputation": 0,
+    "natural_decay_per_day": 0
+  },
+  "loans": {
+    "enabled": true,
+    "available_in_tavern": true,
+    "min_loan_copper": 1000,
+    "max_loan_copper": 50000,
+    "interest_rate_percent": 10,
+    "loan_duration_days": 30,
+    "default_penalty_percent": 50
+  },
+  "events": {
+    "enabled": true,
+    "famine_price_multiplier": 2.0,
+    "festival_price_multiplier": 0.7,
+    "raid_damage_percent": 25,
+    "tax_increase_percent": 10,
+    "events_per_100_days": 3
+  },
+  "quests": {
+    "enabled": true,
+    "delivery_reward_base": 1000,
+    "delivery_reward_per_distance": 50,
+    "delivery_time_limit_days": 7,
+    "quest_board_capacity": 5
+  },
+  "workshops": {
+    "enabled": true,
+    "purchase_price_copper": 10000,
+    "daily_profit_base": 50,
+    "upgrade_cost_multiplier": 1.5,
+    "maintenance_percent": 0.05
+  },
+  "difficulty": {
+    "easy": {
+      "starting_capital_multiplier": 1.5,
+      "price_variance": 0.10,
+      "battle_encounter_percent": 15,
+      "competitor_activity": 0.5
+    },
+    "normal": {
+      "starting_capital_multiplier": 1.0,
+      "price_variance": 0.15,
+      "battle_encounter_percent": 30,
+      "competitor_activity": 1.0
+    },
+    "hard": {
+      "starting_capital_multiplier": 0.7,
+      "price_variance": 0.20,
+      "battle_encounter_percent": 50,
+      "competitor_activity": 1.5
+    }
+  }
+}
